@@ -406,6 +406,8 @@ function Products(){
         url: "functions.php",
         data: { function: "Products" },
         success: function (data) {
+            // data = JSON.parse(data);
+            document.getElementById('div').innerHTML=data
             console.log(data);
         }
     });
